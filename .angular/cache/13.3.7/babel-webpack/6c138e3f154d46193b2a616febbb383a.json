@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createAction, props } from '@ngrx/store';\nexport const setItems = createAction('[IngresoEgreso] Set Items', props());\nexport const UnSetItems = createAction('[IngresoEgreso] UnSet Items');","map":null,"metadata":{},"sourceType":"module"}

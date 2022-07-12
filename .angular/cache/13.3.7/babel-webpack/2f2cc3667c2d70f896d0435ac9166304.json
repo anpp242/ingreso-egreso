@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class IngresoEgreso {\n  constructor(descripcion, monto, tipo) {\n    this.descripcion = descripcion;\n    this.monto = monto;\n    this.tipo = tipo;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

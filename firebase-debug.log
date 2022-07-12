@@ -1,0 +1,82 @@
+[debug] [2022-07-12T01:18:45.665Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T01:18:45.669Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Omar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-12T01:18:45.669Z] CLI Version:   11.2.1
+[debug] [2022-07-12T01:18:45.669Z] Platform:      win32
+[debug] [2022-07-12T01:18:45.670Z] Node Version:  v16.14.0
+[debug] [2022-07-12T01:18:45.671Z] Time:          Mon Jul 11 2022 20:18:45 GMT-0500 (hora estándar de Colombia)
+[debug] [2022-07-12T01:18:45.672Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T01:18:45.783Z] > refreshing access token with scopes: []
+[debug] [2022-07-12T01:18:45.786Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-12T01:18:45.786Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-12T01:18:46.093Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-12T01:18:46.094Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-12T01:18:46.112Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/undefined [none]
+[debug] [2022-07-12T01:18:46.548Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/undefined 403
+[debug] [2022-07-12T01:18:46.548Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/undefined {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-12T01:18:46.550Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-12T01:18:46.552Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Omar\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Omar\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project undefined. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-12T01:19:57.941Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T01:19:57.944Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Omar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-12T01:19:57.945Z] CLI Version:   11.2.1
+[debug] [2022-07-12T01:19:57.945Z] Platform:      win32
+[debug] [2022-07-12T01:19:57.945Z] Node Version:  v16.14.0
+[debug] [2022-07-12T01:19:57.946Z] Time:          Mon Jul 11 2022 20:19:57 GMT-0500 (hora estándar de Colombia)
+[debug] [2022-07-12T01:19:57.947Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T01:19:58.054Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-12T01:19:58.054Z] > authorizing via signed-in user (omarpava3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Redux course\redux-03
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-12T01:21:06.017Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-12T01:21:06.552Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-12T01:21:06.553Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ingreso-egreso-app-fdf81 (ingreso-egreso-app) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming D:\Redux course\redux-03 is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=576292909&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-12T01:30:17.082Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-07-12T01:30:17.083Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-07-12T01:30:17.469Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-07-12T01:30:17.469Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-07-12T01:30:17.483Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-12T01:30:17.932Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-12T01:30:17.933Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"anpp242","id":37913050,"node_id":"MDQ6VXNlcjM3OTEzMDUw","avatar_url":"https://avatars.githubusercontent.com/u/37913050?v=4","gravatar_id":"","url":"https://api.github.com/users/anpp242","html_url":"https://github.com/anpp242","followers_url":"https://api.github.com/users/anpp242/followers","following_url":"https://api.github.com/users/anpp242/following{/other_user}","gists_url":"https://api.github.com/users/anpp242/gists{/gist_id}","starred_url":"https://api.github.com/users/anpp242/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/anpp242/subscriptions","organizations_url":"https://api.github.com/users/anpp242/orgs","repos_url":"https://api.github.com/users/anpp242/repos","events_url":"https://api.github.com/users/anpp242/events{/privacy}","received_events_url":"https://api.github.com/users/anpp242/received_events","type":"User","site_admin":false,"name":"OmarPava242","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":17,"public_gists":0,"followers":0,"following":0,"created_at":"2018-03-29T19:23:09Z","updated_at":"2022-07-12T01:30:17Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":39019,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as anpp242 
+[info] 
+[debug] [2022-07-12T01:30:35.492Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2022-07-12T01:30:35.842Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2022-07-12T01:30:35.843Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
